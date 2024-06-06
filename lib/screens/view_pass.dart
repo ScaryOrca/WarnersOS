@@ -15,12 +15,21 @@ class ViewPass extends StatefulWidget {
 }
 
 class _ViewPassState extends State<ViewPass> {
+  String passTitle = '';
+  String passData = '';
+
   // Preferences
   late bool useDarkTheme = false;
 
   @override
   void initState() {
     loadPreferences();
+
+    setState(() {
+      passTitle = widget.pass.title;
+      passData = widget.pass.data;
+    });
+
     super.initState();
   }
 
@@ -35,11 +44,11 @@ class _ViewPassState extends State<ViewPass> {
   @override
   Widget build(BuildContext context) {
     return Screen(
-      title: widget.pass.title,
+      title: passTitle,
       editScreen: navigateToEditPass,
       children: [
         QrImageView(
-          data: widget.pass.data,
+          data: passData,
           backgroundColor: Colors.white,
           dataModuleStyle: QrDataModuleStyle(
             color: Colors.black,
@@ -50,10 +59,20 @@ class _ViewPassState extends State<ViewPass> {
     );
   }
 
-void navigateToEditPass() {
-  final route = MaterialPageRoute(
-    builder: (context) => EditPass(pass: widget.pass),
-  );
-  Navigator.push(context, route);
-}
+  void navigateToEditPass() {
+    final modifiedPass = Pass(title: passTitle, data: passData, id: widget.pass.id, format: 0);
+    final route = MaterialPageRoute(
+      builder: (context) => EditPass(pass: modifiedPass),
+    );
+
+    Navigator.push(context, route).then((value) {
+      if (value != null) {
+        setState(() {
+          passTitle = (value as Pass).title;
+          passData = (value as Pass).data;
+        });
+      }
+      
+    });
+  }
 }
