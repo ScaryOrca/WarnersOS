@@ -1,16 +1,20 @@
-# warnersos
+# Warner's OS
 
-A new Flutter project.
+Warner's OS is my alternative to the LightOS launcher.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+WIP
 
-A few resources to get you started if this is your first Flutter project:
+## Install
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Installation of Warner's OS requires accessing the Android layer. The Android
+layer can be accessed in under a minute using the following steps:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Enable developer mode by pressing the following hardware buttons:
+DOWN DOWN UP UP DOWN UP HOME. A message will be displayed if successful.
+2. Go to Settings > Scoll down to Developers > Change Launcher. Tap "Set Default"
+on each prompt that appears. Set Launcher3 as the default launcher.
+
+WIP
+
