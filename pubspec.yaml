@@ -73,6 +73,36 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
+  fonts:
+    - family: Overpass
+      fonts:
+        - asset: fonts/overpass-thin.otf
+          weight: 100
+        - asset: fonts/overpass-thin-italic.otf
+          style: italic
+          weight: 100
+        - asset: fonts/overpass-extralight.otf
+          weight: 200
+        - asset: fonts/overpass-extralight-italic.otf
+          style: italic
+          weight: 200
+        - asset: fonts/overpass-light.otf
+          weight: 300
+        - asset: fonts/overpass-light-italic.otf
+          style: italic
+          weight: 300
+        - asset: fonts/overpass-regular.otf
+          weight: 400
+        - asset: fonts/overpass-italic.otf
+          style: italic
+          weight: 400
+        - asset: fonts/overpass-bold.otf
+          weight: 700
+        - asset: fonts/overpass-bold-italic.otf
+          style: italic
+          weight: 700
+
+
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
