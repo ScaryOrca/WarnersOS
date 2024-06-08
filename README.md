@@ -18,3 +18,25 @@ on each prompt that appears. Set Launcher3 as the default launcher.
 
 WIP
 
+## Roadmap
+
+- [ ] Refactor codebase to use <a href="https://bloclibrary.dev/">Bloc</a>
+- [ ] Add tests
+- [ ] Add support for third-party tools
+- [ ] Come up with a better name than "Warner's OS"
+- [ ] Multi-language support
+    - [x] English
+    - [ ] Spanish
+- [ ] Add more default tools
+    - [ ] Calendar
+    - [ ] Messaging
+        - [ ] SMS
+    - [ ] Multi-factor authentication
+    - [ ] Music
+        - [ ] Local music library
+        - [ ] Stream purchased library from Bandcamp
+        - [ ] Stream radio stations
+    - [ ] Notes
+        - [ ] Support markdown
+    - [ ] Podcasts
+
